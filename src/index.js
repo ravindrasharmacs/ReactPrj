@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import TodoList from './TodoList';
 import FormWithControlledComponents from './FormWithControlledComponents';
 import PostList from './PostList';
+import FilteredList from './FilteredList';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,6 +14,8 @@ root.render(
   // it is used to detect any errors in the code
   <React.StrictMode>
     <div className='App'>
+      <h1>Search for a Fruit </h1>
+      <FilteredList />
       <h1>My Blog Posts</h1>
       <PostList />
     </div>
