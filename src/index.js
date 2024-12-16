@@ -4,12 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import TodoList from './TodoList';
+import FormWithControlledComponents from './FormWithControlledComponents';
+// import FormWithControlledComponents from '../formwithcontrolledComponents';
+// import formwithcontrolledComponents from './formwithcontrolledComponents';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // strictmode is used to detect any potential errors in the code
   // it is used to detect any errors in the code
   <React.StrictMode>
+    <FormWithControlledComponents />
     <TodoList />
     <App />
   </React.StrictMode>
