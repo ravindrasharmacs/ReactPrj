@@ -1,8 +1,15 @@
 import React, { useState } from "react";
 import Modal from "./Modal";
-import Tabs from "./Tabs"; // Ensure you have a Tabs component imported
+import Tabs from "./Tabs";
+import ImageCarousel from "./ImageCarousel";;// Add this import
 
 function App() {
+  const images = [
+    'https://media.istockphoto.com/id/1252264724/photo/the-modern-creative-communication-and-internet-network-connect-in-smart-city.jpg?s=2048x2048&w=is&k=20&c=aPRTiE0dwv__syNDvV7HZqC2TNXzUBuEjX3EOTVQiYk=', 
+    'https://media.istockphoto.com/id/1252264734/photo/the-modern-creative-communication-and-internet-network-connect-in-smart-city.jpg?s=2048x2048&w=is&k=20&c=ofT7F_A9xB_r35N6-LN7YQjeQ83LkgWfiozDOJe-o-w=',
+    'https://media.istockphoto.com/id/672032800/photo/computer-network-connection-modern-city-technology.jpg?s=2048x2048&w=is&k=20&c=ukqgpuY-eCqCSt1uH_lK6bvkCaMjm96PWJiLoF4Bw24='
+  ];
+
   const tabsData = [
     {
       title: "Tab 1",
@@ -39,6 +46,9 @@ function App() {
 
   return (
     <div className="App">
+      <h1>Image Carousel Example</h1>
+      <ImageCarousel images={images} />
+
       <h1>Tabs Example</h1>
       <Tabs tabs={tabsData} />
       
