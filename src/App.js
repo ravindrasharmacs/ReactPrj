@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import Modal from "./Modal";
 import Tabs from "./Tabs";
-import ImageCarousel from "./ImageCarousel";;// Add this import
+import ImageCarousel from "./ImageCarousel";
+import ParentComponent from "./ParentComponent";
+;// Add this import
 
 function App() {
   const images = [
@@ -45,7 +47,10 @@ function App() {
   };
 
   return (
+    
     <div className="App">
+      <h1>Parent Component Example</h1>
+      <ParentComponent />
       <h1>Image Carousel Example</h1>
       <ImageCarousel images={images} />
 
